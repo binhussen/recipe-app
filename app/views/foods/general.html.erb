@@ -1,0 +1,25 @@
+<section>
+    <p>Shopping List</p>
+    <div>
+      <div>Amount of food items to buy: &nbsp;<%= @foods.length %></div>
+      <div>Total value of food needed: &nbsp;$<%= @total %></div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Food</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @foods.each do |food| %>
+          <tr>
+            <td><%= food.name %></td> 
+            <td><%= food.quantity %></td>
+            <td>$<%= food.price * food.quantity %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+</section>
