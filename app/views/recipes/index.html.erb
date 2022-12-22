@@ -1,0 +1,18 @@
+<section>
+    <div>
+      <%= link_to "Add Recipe", new_recipe_path %>
+    </div>
+    <ul>
+      <% @recipes.each do |recipe| %>
+        <li>
+          <div>
+            <%= link_to recipe.name, recipe_path(recipe) %>
+            <%= button_to "Remove", recipe_path(recipe.id), method: :delete%>
+          </div>
+          <div>
+            <%= truncate(recipe.description, length: 100) %>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+</section>
