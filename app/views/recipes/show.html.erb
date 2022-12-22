@@ -1,0 +1,54 @@
+<section>
+    <p ><%= @recipe.name %></p>
+    <div>
+        <p>Preparation Time:</p>
+        <p><%= @recipe.preparation_time %> hours</p>
+      Public: &nbsp; &nbsp; <%= t(@recipe.public) %>
+    </div>
+    <div>
+      <p>Cooking Time:</p>
+      <p><%= @recipe.cooking_time %> hours</p>
+    </div>
+    <p><%= @recipe.description %></p>
+    <div>
+      <% if @recipe.user == current_user %>
+        <div>
+          <%= link_to "Generate Shopping List", general_shopping_list_path %>
+        </div>
+      <% end %>
+      <% if @recipe.user == current_user %>
+        <div>
+          <%= link_to "Add Ingredient", new_recipe_recipe_food_path(@recipe) %>
+        </div>
+      <% end %>
+    </div>
+    <% if @recipe_foods.length > 0 %>
+      <table>
+        <thead>
+          <tr>
+            <th>Food</th>
+            <th>Quantity</th>
+            <th>Value</th>
+            <th >Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @recipe_foods.each do |recipe_food| %>
+            <tr>
+              <td><%= recipe_food.food.name %></td>
+              <td><%= recipe_food.quantity %></td>
+              <td>$<%= recipe_food.quantity * recipe_food.food.price %></td>
+              <td>
+                <% if current_user == recipe_food.recipe.user %>
+                  <%= button_to 'Remove', recipe_recipe_food_path(@recipe, recipe_food), method: :delete %>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <div>Add some new Ingredient.</div>
+    <% end %>
+  </div>
+</section>
