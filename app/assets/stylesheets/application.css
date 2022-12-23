@@ -1,15 +1,84 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.shoppinglist {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.food-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.foodbutton {
+    display: flex;
+    align-self: flex-end;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.foodtable {
+ display: flex;
+ justify-content: center;
+}
+
+.signincontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.signin {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(206, 201, 201);
+    border-radius: 10px;
+    background-color: rgb(189, 15, 15);
+}
+
+.signin h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:larger;
+    color: rgb(206, 201, 201);
+}
+
+.signinemail {
+    color: rgb(236, 231, 231);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  width: 100%;
+  padding: 0 0 15px 0;
+}
+
+.siginpass {
+    color: rgb(236, 231, 231);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium; 
+  padding: 0 0 15px 0;
+}
+
+.remembersigin {
+    color: rgb(236, 231, 231);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium; 
+    padding: 0 0 10px 0;
+}
+
+button {
+    width: 100%;
+    color: white;
+    background-color: rgb(43, 41, 41);
+    padding: 7px;
+}
+
