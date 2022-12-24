@@ -1,11 +1,11 @@
-<section>
-    <div>
+<section class="recipe">
+    <div class="addrecipe">
       <%= link_to "Add Recipe", new_recipe_path %>
     </div>
     <ul>
       <% @recipes.each do |recipe| %>
-        <li>
-          <div>
+        <li class="recipecard">
+          <div class="card">
             <%= link_to recipe.name, recipe_path(recipe) %>
             <%= button_to "Remove", recipe_path(recipe.id), method: :delete%>
           </div>
