@@ -72,7 +72,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Coming Soon....](https://yourdeployedapplicationlink.com)
+- [Live demo](https://recipe-app-y24d.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
