@@ -82,3 +82,56 @@ button {
     padding: 7px;
 }
 
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.navbar h1 {
+   color: rgb(43, 41, 41);
+   font-size: x-large;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar li {
+    color: rgb(43, 41, 41);
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  a:link {
+    color: #c7aa29;
+  }
+  
+  a:visited {
+    color: #213ec0;
+  }
+  
+  a:hover {
+    color: #b31c1c;
+  }
+  
+  a:active {
+    color: #333;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
