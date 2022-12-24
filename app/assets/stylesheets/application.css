@@ -1,19 +1,46 @@
 .food-container {
-    width: 100%;
-    height: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .foodbutton {
-    display: flex;
-    align-self: flex-end;
-    background-color: aliceblue;
-    color: black;
-    border-radius: 2px;
-    font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  align-self: flex-end;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 2px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+a:link {
+  color: #c7aa29;
+}
+
+a:visited {
+  color: teal;
+}
+
+a:hover {
+  color: #444;
+}
+
+a:active {
+  color: green;
+}
+
+nav a:hover {
+  color: #000;
 }
 
 .foodbutton a:link {
@@ -27,56 +54,57 @@
 }
 
 .foodtable {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .foodtable th {
-    width: 90px;
+  width: 90px;
 }
 
 .foodtable thead {
-    border:1px solid rgb(43, 41, 41); 
+  border: 1px solid rgb(43, 41, 41);
 }
 
 .foodtable tbody {
-    border:1px solid rgb(43, 41, 41); 
+  border: 1px solid rgb(43, 41, 41);
 }
+
 .foodtable td {
-    width: 90px;
+  width: 90px;
 }
 
 .signincontainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
 }
 
 .signin {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(206, 201, 201);
-    border-radius: 10px;
-    background-color: rgb(189, 15, 15);
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(206, 201, 201);
+  border-radius: 10px;
+  background-color: rgb(189, 15, 15);
 }
 
 .signin h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:larger;
-    color: rgb(206, 201, 201);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  color: rgb(206, 201, 201);
 }
 
 .signinemail {
-    color: rgb(236, 231, 231);
+  color: rgb(236, 231, 231);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: medium;
   width: 100%;
@@ -84,134 +112,117 @@
 }
 
 .siginpass {
-    color: rgb(236, 231, 231);
+  color: rgb(236, 231, 231);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: medium; 
+  font-size: medium;
   padding: 0 0 15px 0;
 }
 
 .remembersigin {
-    color: rgb(236, 231, 231);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium; 
-    padding: 0 0 10px 0;
+  color: rgb(236, 231, 231);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  padding: 0 0 10px 0;
 }
 
 button {
-    width: 100%;
-    color: white;
-    background-color: rgb(43, 41, 41);
-    padding: 7px;
+  width: 100%;
+  color: white;
+  background-color: rgb(43, 41, 41);
+  padding: 7px;
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navbar h1 {
-   color: rgb(43, 41, 41);
-   font-size: x-large;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(43, 41, 41);
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar li {
-    color: rgb(43, 41, 41);
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 10px;
+  color: rgb(43, 41, 41);
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav a {
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-  }
-  
-  a:link {
-    color: #c7aa29;
-  }
-  
-  a:visited {
-    color: teal;
-  }
-  
-  a:hover {
-    color:#444;
-  }
-  
-  a:active {
-    color: green;
-  }
-  
-  nav a:hover {
-    color: #000;
-  }
-  
-  .recipe {
-    width: 100%;
-    height: 100%;
-  }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  .addrecipe a:link {
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-    background-color: black;
-    font-size: 15px;
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-  }
+.recipe {
+  width: 100%;
+  height: 100%;
+}
 
-  .addrend {
-     display: flex;
-     justify-content: flex-end;
-  }
+.addrecipe a:link {
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  background-color: black;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
 
-  .card a:link {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-  }
+.addrend {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  .card a:link:active {
-    color: green;
-  }
+.link a:link {
+  text-decoration: none;
+  color: rgb(236, 231, 231);
+  font-size: 1.1rem;
+}
+
+.shopbutton a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.card a:link {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card a:link:active {
+  color: green;
+}
 
 .recipecard {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(189, 15, 15) ;
-    width: 100%;
-    height: 90px;
-    border-radius: 6px;
-    color: rgb(236, 231, 231);
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(189, 15, 15);
+  width: 100%;
+  height: 90px;
+  border-radius: 6px;
+  color: rgb(236, 231, 231);
+  margin-top: 10px;
 }
 
 .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .recipename {
   font-size: 1.4rem;
   font-family: 'Times New Roman', Times, serif;
-
 }
 
 .recipedetail {
@@ -222,128 +233,117 @@ nav ul {
   align-items: center;
   flex-direction: column;
   background: rgb(189, 15, 15);
-  color: rgb(236, 231, 231) ;
+  color: rgb(236, 231, 231);
   font-size: 1.2rem;
 }
 
 .recipedetail .main {
-   width: 100%;
-   display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .both {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .shopbutton {
-    padding: 5px 10px;
+  padding: 5px 10px;
   background-color: black;
   color: white;
   font-weight: bold;
   border-radius: 5px;
 }
 
-.shopbutton a:link {
-    text-decoration: none;
-    color: white;
-}
-
 .shoptable {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    color: rgb(236, 231, 231) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  color: rgb(236, 231, 231);
 }
 
 .shoptable thead tr {
-    padding: 10px;
-    margin-left: 10px;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 .public {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.public p{
+.public p {
   font-size: 1.6rem;
-  color:  rgb(43, 41, 41) ;
+  color: rgb(43, 41, 41);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .publicon {
-    width: 90%;
+  width: 90%;
 }
 
-.publicard{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(189, 15, 15) ;
-    width: 100%;
-    height: 90px;
-    border-radius: 6px;
-    color: rgb(236, 231, 231);
-    margin-top: 10px;  
+.publicard {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(189, 15, 15);
+  width: 100%;
+  height: 90px;
+  border-radius: 6px;
+  color: rgb(236, 231, 231);
+  margin-top: 10px;
 }
 
 .something {
-    display: flex;
-    flex-direction: column;
-}
-
-.link a:link {
-    text-decoration: none;
-    color: rgb(236, 231, 231) ;
-    font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .shoppinglist {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .shoppinglist p {
   font-size: 1.5rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
 .shopfood {
-    display: flex;
-    width: 100%;
-    justify-content:space-evenly;
-    margin: 0 0 20px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0 0 20px 0;
 }
 
-.shoplistab{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.shoplistab {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .shoplistab th {
-    width: 90px;
+  width: 90px;
 }
+
 .shoplistab td {
-    width: 90px;
+  width: 90px;
 }
 
 .shoplistab thead {
-    border:1px solid rgb(43, 41, 41); 
+  border: 1px solid rgb(43, 41, 41);
 }
 
 .shoplistab tbody {
-    border:1px solid rgb(43, 41, 41); 
+  border: 1px solid rgb(43, 41, 41);
 }
