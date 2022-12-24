@@ -1,19 +1,19 @@
 <nav class="navbar">
   <h1>Shopping on Rails</h1>
   <% if current_user %>
-    <%= link_to "Recipes", recipes_path%>
-    <%= link_to "Foods", foods_path%>
-    <%= link_to "General Shopping List", "/general_shopping_list" %>
+    <li><%= link_to "Recipes", recipes_path%></li>
+   <li> <%= link_to "Foods", foods_path%> </li>
+   <li> <%= link_to "General Shopping List", "/general_shopping_list" %> </li>
   <% end %>
-  <%= link_to "Public Recipes", "/public_recipes"%>
+ <li> <%= link_to "Public Recipes", "/public_recipes"%> </li>
   <div>
     <% if current_user %>
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete }%>
-    <% else %>
+     <li> <%= link_to "Sign out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete }%> </li>
+      <% else %>
       <% if current_page?(new_user_session_path) %>
-        <%= link_to "Sign up", new_user_registration_path%>
+       <li> <%= link_to "Sign up", new_user_registration_path%> </li>
       <% elsif current_page?(new_user_registration_path) %>
-        <%= link_to "Sign in", new_user_session_path%>
+       <li> <%= link_to "Sign in", new_user_session_path%> </li>
       <% end %>
     <% end %>
   </div>
