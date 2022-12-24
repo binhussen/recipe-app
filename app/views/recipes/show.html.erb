@@ -1,29 +1,32 @@
 <section class="recipedetail">
-    <p ><%= @recipe.name %></p>
-    <div>
+    <p class="recipename" ><%= @recipe.name %></p>
+    <div class="main">
         <p>Preparation Time:</p>
         <p><%= @recipe.preparation_time %> hours</p>
-      Public: &nbsp; &nbsp; <%= t(@recipe.public) %>
     </div>
-    <div>
+    <div class="main">
+    Public: &nbsp; &nbsp; <%= t(@recipe.public) %>
+    </div>
+    <div class="main">
       <p>Cooking Time:</p>
       <p><%= @recipe.cooking_time %> hours</p>
     </div>
     <p><%= @recipe.description %></p>
-    <div>
+    <div class="both">
       <% if @recipe.user == current_user %>
-        <div>
+        <div class="shopbutton">
           <%= link_to "Generate Shopping List", general_shopping_list_path %>
         </div>
       <% end %>
       <% if @recipe.user == current_user %>
-        <div>
+        <div class="shopbutton">
           <%= link_to "Add Ingredient", new_recipe_recipe_food_path(@recipe) %>
         </div>
       <% end %>
     </div>
     <% if @recipe_foods.length > 0 %>
-      <table>
+    <div class="tablecon">
+      <table class="shoptable">
         <thead>
           <tr>
             <th>Food</th>
@@ -47,6 +50,7 @@
           <% end %>
         </tbody>
       </table>
+      </div>
     <% else %>
       <div>Add some new Ingredient.</div>
     <% end %>
