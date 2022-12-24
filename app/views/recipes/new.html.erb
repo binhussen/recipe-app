@@ -1,0 +1,41 @@
+<section class="form">
+  <%= form_with model: @recipe do |form| %>
+    <% if @recipe.errors.any? %>
+      <div>
+        <h3><%= pluralize(@recipe.errors.count, "error") %> occurred: </h3>
+        <ul>
+          <%= @recipe.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <h2>Add a New Recipe</h2>
+    <div>
+      <%= form.label :name, "Name" %>
+      <%= form.text_field :name, placeholder: "Name", required: true, autofocus: true%>
+    </div>
+    <div>
+      <%= form.label :preparation_time, "Preparation Time" %>
+      <%= form.number_field :preparation_time, placeholder: 0, required: true, autofocus: true%>
+    </div>
+    <div>>
+      <%= form.label :cooking_time, "Cooking Time" %>
+      <%= form.number_field :cooking_time, placeholder: 0, required: true, autofocus: true%>
+    </div>
+    <div>
+      <%= form.label :description, "Description" %>
+      <%= form.text_area :description, placeholder: "A description about the recipe", rows: 5, required: true, autofocus: true%>
+    </div>
+    <div>
+      <%= form.label :public %><br/>
+      <%= form.label :public, "Yes", value: "true" %>
+      <%= form.radio_button :public, true, checked: true %> &nbsp; &nbsp;
+      <%= form.label :public, "No", value: "false" %>
+      <%= form.radio_button :public, false %>
+    </div>
+    <div>
+      <%= form.submit "Add Recipe", data: { disable_with: "Loading" } %>
+    </div>
+  <% end %>
+</section>

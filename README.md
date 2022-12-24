@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[your\_project\_name\] ](#-your_project_name-)
+- [📖 \[ Food Recipe\] ](#--food-recipe-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -25,29 +25,28 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [ Food Recipe] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
 
-**[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Tailwind Css</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">Ruby</a></li>
+    <li><a href="https://expressjs.com/">ROR</a></li>
   </ul>
 </details>
 
@@ -62,11 +61,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **food list**
+- **recipe List**
+- **general shopping**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,9 +71,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Coming Soon....](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +80,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -92,63 +87,45 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
 ```sh
  gem install rails
 ```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+```sh
+  git clone https://github.com/binhussen/recipe-app.git
+```
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd recipe-app
 ```
---->
-
+  
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
-  gem install
+  bundle install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   rails server
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+  bin/rails test
 ```
---->
 
 ### Deployment
 
@@ -168,15 +145,13 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Mohammed Hussen (binhussen)**
 
-👤 **Author1**
+- GitHub: [@binhussen](https://github.com/binhussen)
+- Twitter: [@binhussens](https://twitter.com/binhussens)
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/binhussen/)
 
-- GitHub: [@binhussen](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
+👤 **Summyalena**
 
 - GitHub: [@summyalena](https://github.com/githubhandle)
 - Twitter: [@AOkolike](https://twitter.com/twitterhandle)
@@ -188,11 +163,11 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- [ ] **A food list**
+- [ ] **A recipes list**
+- [ ] **A general shopping list view**
+- [ ] **A list of all public recipes from other users with their names and total prices.**
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,17 +195,16 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to thank
 
-I would like to thank...
+- Microverse
+- Code Reviewers
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[Question_1]**
 
@@ -248,3 +222,6 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
