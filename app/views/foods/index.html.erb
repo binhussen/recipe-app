@@ -1,0 +1,25 @@
+<section class="foodcontainer">
+    <li class="foodbutton"><%= link_to "Add Food", new_food_path %></li>
+    <table class="foodtable">
+      <thead>
+        <tr>
+          <th>Food</th>
+          <th>Quantity</th>
+          <th>Measurement Unit</th>
+          <th>Unit Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @foods.each do |food| %>
+          <tr>
+            <td><%= food.name %></td>
+            <td><%= food.quantity %></td>
+            <td><%= food.measurement_unit %></td>
+            <td>$<%= food.price %></td>
+            <td><%= button_to "Delete", food_path(food.id), method: :delete%></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+</section>
